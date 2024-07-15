@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const data = [
-    { title: "Home", url: "/" },
+    { title: "Home", url: "/home" },
     { title: "About", url: "/about" },
     {
       title: "Services",
@@ -50,7 +50,9 @@ const Navbar = () => {
     <div className="flex-none bg-gray-800 p-4">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-white text-lg font-semibold">Logo</span>
+          <a href="/">
+            <span className="text-white text-lg font-semibold">Logo</span>
+          </a>
         </div>
         <div className="flex">
           {data.map((link, index) => (

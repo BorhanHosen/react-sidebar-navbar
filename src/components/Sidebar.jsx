@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 
 export const data = [
-  { title: "Home", url: "/" },
+  { title: "Home", url: "/home" },
   { title: "About", url: "/about" },
   {
     title: "Services",
@@ -25,7 +25,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 p-4 flex-grow bg-gray-800 text-white">
+    <div className="w-64 p-4 bg-gray-900 text-white border-r-[1px] border-slate-600">
       <h2 className="text-xl font-bold">My Sidebar</h2>
       <div className="mt-4">
         {data.map((item, index) => (
